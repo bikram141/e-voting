@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+   
+
+
+<title>UNIVERSITY ELECTION SYSTEM </title>
+<style>
+	* {
+	  box-sizing: border-box;
+	}
+	
+	input[type=text], select, textarea {
+	  width: 30%;
+	  padding: 12px;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  resize: vertical;
+	}
+	
+	label {
+	  padding: 12px 12px 12px 0;
+	  display: inline-block;
+	}
+	
+	input[type=submit] {
+	  background-color: #04AA6D;
+	  color: white;
+	  padding: 12px 20px;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	  float: right;
+	}
+	
+	input[type=submit]:hover {
+	  background-color: #45a049;
+	}
+	
+	.container {
+	  border-radius: 5px;
+
+	  padding: 20px;
+	}
+	
+	.col-25 {
+	  float: left;
+	  width: 25%;
+	  margin-top: 6px;
+	}
+	
+	.col-75 {
+	  float: left;
+	  width: 75%;
+	  margin-top: 6px;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	
+	/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 600px) {
+	  .col-25, .col-75, input[type=submit] {
+		width: 100%;
+		margin-top: 0;
+	  }
+	}
+	</style>
+</head>
+
+<body style="background-image:url('/master/html/voting/image/voteindia.jpg');background-repeat: no-repeat; background-size: 105% 105%;">
+	<section>
+<center><font size="6" color="blue" >BERHAMPUR UNIVERSITY</font><BR>
+<font size="4" color="blue">BHANJA BIHAR, BERHAMPUR<BR>760007(ODISHA)</font></CENTER>
+<br>
+<br>
+<br>
+<br>
+<center><font color="deepblue"><h1>2020 STUDENT UNION ELECTIONS:-</h1></font>
+<progress></progress></center>
+<br>
+<br>
+<fieldset>
+<legend>ONLINE ELECTION SYSTEM</legend>
+<div class="container">
+	<div class="row">
+	 <div class="col mx-auto col-md-8 mt-3 text-center">
+   <!-- form -->
+   <form id="itemForm" class="my-3">
+	<h3 class="text-capitalize mb-4"></h3>
+	<div class="input-group">
+
+	 <div class="row">
+		<div class="col">
+		  <label for="fname">First Name</label>
+		  <input type="text" id="fname" class="form-control text-capitalize" placeholder="Your first name..">
+
+		  <label for="lname">Last Name</label>
+		  <input type="text" id="lname" class="form-control text-capitalize"  placeholder="Your last name..">
+		</div>
+	  </div>
+<br>
+	  <div class="row">
+		<div class="col">
+		  <label for="department">Department</label>
+		  <input type="text" id="department" class="form-control text-capitalize" placeholder="Your department..">
+		</div>
+	  </div>
+<br>
+	  <div class="row">
+		<div class="col">
+		  <label for="roll_no">Roll No</label>
+		  <input type="text" id="roll_no" class="form-control text-capitalize" placeholder="Your roll number..">
+		</div>
+	  </div>
+<br>
+	  <b>FOR PRESIDENT:-</b>
+	  <div class="row">
+		<div class="col">
+		  <label for="p_candidate">Candidate name</label>
+
+		  <select id="p_candidate" class="form-control text-capitalize">
+			<option>selected</option>
+				<option>Sahoo rahul kumar</option>
+				<option>Jena bibek ranjan jena</option>
+				<option>Sahoo sachi kumar </option>
+				<option>Behera pratap kumar </option>
+				<option>Panda manu </option>
+		  </select>
+		</div>
+	  </div>
+<br>
+	  <b>FOR VICE-PRESIDENT:-</b>
+	  <div class="row">
+		<div class="col">
+		  <label for="vp_candidate">Candidate name</label>
+
+		  <select id="vp_candidate" class="form-control text-capitalize">
+			<option>selected</option>
+			<option>parida guddu</option>
+			<option>sahoo soumya</option>
+			<option>navakoti sandeep </option>
+			<option> behera harish</option>
+		  </select>
+		</div>
+	  </div>
+<br>
+	  <b>FOR GENERAL SECRETARY:-</b>
+	  <div class="row">
+		<div class="col">
+		  <label for="gs_candidate">Candidate name</label>
+
+		  <select id="gs_candidate" class="form-control text-capitalize">
+			<option>selected</option>
+			<option>sahoo rabindra</option>
+			<option>jena lipsa</option>
+			<option>das arpita </option>
+			<option>jena bijaylaxmi </option>	
+		  </select>
+		</div>
+	  </div>
+<br>
+	  <b>FOR ASSISTANT SECRETARY:-</b>
+	  <div class="row">
+		<div class="col">
+		  <label for="as_candidate">Candidate name</label>
+
+		  <select id="as_candidate" class="form-control text-capitalize">
+			<option>selected</option>
+			<option>Lenka bikram keshari</option>
+			<option>Nath sagar kumar</option>
+		  </select>
+		</div>
+	  </div>
+<br>
+	  <b>FOR ATHLETIC CLUB:-</b>
+	  <div class="row">
+		<div class="col">
+		  <label for="ac_candidate">Candidate name</label>
+
+		  <select id="ac_candidate" class="form-control text-capitalize">
+			<option>selected</option>
+			<option>Senapati jonty</option>
+			<option>Nanda kisor</option>
+			<option> Mahunta sneha</option>
+			<option>Soren bulbul </option>
+			<option> Gouda debahsis</option>
+		  </select>
+		</div>
+	  </div>
+<br>
+
+
+	  <b>FOR DRAMA SOCIETY:-</b>
+	  <div class="row">
+		<div class="col">
+		  <label for="ds_candidate">Candidate name</label>
+
+		  <select id="ds_candidate" class="form-control text-capitalize">
+			<option>selected</option>
+			<option>Das jitu</option>
+		  </select>
+		</div>
+	  </div>
+	<center>
+	 <div class="input-group-append">
+		<button class="btn btn-green text-capitalize" type="Reset">Reset</button>
+	  <button class="btn btn-green text-capitalize" type="submit">Vote</button>
+	 </div>
+	 </center>
+	</div>
+   </form>
+<hr>
+   <center>
+   <font size="10" color="red" >The list of the Candidates:-</font>
+  
+   <div class="item-container">
+	<!-- end of form  -->
+	<div class="item-list my-5">
+
+	</div>
+	<button type="button" class="btn btn-green my-3 text-capitalize" id="clear-list">clear items</button></center>
+   </div>
+  </div>
+ </div>
+</div>
+
+
+
+</fieldset>
+</section>
+ <!-- jquery -->
+ <script src="js/jquery-3.3.1.min.js"></script>
+ <!-- bootstrap js -->
+ <script src="js/bootstrap.bundle.min.js"></script>
+ <!-- script js -->
+ <script src="js/app.js"></script>
+</body>
+
+</html>
